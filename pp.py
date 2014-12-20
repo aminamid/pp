@@ -28,7 +28,7 @@ def pretty_convert(obj):
     elif isinstance(obj, ( int, long, complex )):
         return u'{1}{2}{0}'.format(color.ENDC, color.BLUE, obj)
     elif isinstance(obj, ( basestring )):
-        return u'{1}"{0}{2}{3}{0}{1}"{0}'.format(color.ENDC, color.REDL, color.RED, obj)
+        return u'{1}"{0}{2}{3}{0}{1}"{0}'.format(color.ENDC, color.REDL, color.RED, unicode(obj,'utf-8'))
     elif isinstance(obj, ( dict )):
         return dict((u'{1}{2}:{0}'.format(color.ENDC, color.YELLOW,k), pretty_convert(v)) for k, v in obj.items())
     elif isinstance(obj, (list, tuple)):
