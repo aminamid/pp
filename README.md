@@ -1,25 +1,25 @@
 # Usage
 
-pp.py print some python objects.
+colorpp.py print some python objects.
 
 ```
->>> import pp
->>> pp.pprint("test")
->>> pp.pprint( {"id": 65535, "value": 3.14, "list": [1,2,3] } )
+>>> import colorpp
+>>> colorpp.pprint("test")
+>>> colorpp.pprint( {"id": 65535, "value": 3.14, "list": [1,2,3] } )
 
 >>> import logging
 >>> logging.basicConfig()
->>> logging.warning( pp.pprintf(object) )
+>>> logging.warning( colorpp.pprintf(object) )
 
 ```
 
-From commandline, pp.py without args read sys.stdin , and try to parse as json, or yaml.
-If there is argument, pp.py open the file, and try to parse as json, or yaml.
+From commandline, colorpp.py without args read sys.stdin , and try to parse as json, or yaml.
+If there is argument, colorpp.py open the file, and try to parse as json, or yaml.
 
 ```
-$ echo '{ "msg": "this is json" }' | pp.py
-$ echo '{ msg: this is yaml }' | pp.py
+$ echo '{ "msg": "this is json" }' | colorpp.py
+$ echo '{ msg: this is yaml }' | colorpp.py
 $ echo '{ "msg": "this is file" }' > smpl.json
-$ pp.py smpl.json 
+$ colorpp.py smpl.json 
 ```
 

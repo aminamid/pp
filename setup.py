@@ -17,13 +17,13 @@ classifiers = [
 ]
 
 setup(
-    name='pp',
+    name='colorpp',
     version='0.1.0',
     description='pretty print json, yaml, and python object.',
     author='aminamid',
     author_email='pekorinko@gmail.com',
-    url='https://github.com/aminamid/pp',
-    py_modules=['pp'],
+    url='https://github.com/aminamid/colorpp',
+    py_modules=['colorpp'],
     keywords=['json', 'yaml','pretty', ],
     classifiers=classifiers,
     install_requires=[''],
